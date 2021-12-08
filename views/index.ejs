@@ -1,0 +1,28 @@
+<%- include ('./partials/_header.ejs') %>
+<section>
+    <div class="container"> 
+            <div class="row">
+                
+
+                  <% books.forEach(function(book) { %>
+                    <div class="col-md-4">
+                        <div class="card bg-dark">
+                          <div class="card-header text-white d-flex justify-content-between align-items-center">
+                            <%= book.title %>
+                          </div>
+                          <img class="card-img-top" src="<%= book.image %>">
+                          <div class="card-body text-light">
+                            <%= book.description %>
+                            <div><a href="<%= book.link%>">Link</a></div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    <%})%>
+            </div>
+        <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(213640)</script> 
+        
+    </div>
+
+    <%- include ('./partials/_menu.ejs') %>   
+<%- include ('./partials/_footer.ejs') %>

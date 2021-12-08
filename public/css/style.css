@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    height: 90px;
+}
+body {    
+    background-color: #f0f0f0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --rojopoli: #4c0424;
+}
+
+.navbar {
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    background-color: var(--rojopoli);
+    display: flex;    
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;    
+}
+
+.opciones {
+    margin-left: 1em;
+}
+
+footer {
+    background-color: var(--rojopoli);
+    height: auto;
+    width: 100%;
+    padding: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 5em 0 5em;
+    background: #f0f0f0;
+    width: 70%;
+    height: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding: 1em;
+    justify-content: center;
+
+}
+
+.formulario input[type = "text"],.formulario input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid #960909;
+    padding: 15px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.formulario input[type = "text"]:focus,.formulario input[type = "password"]:focus{
+    width: 280px;
+}
+
+.formulario button {
+    border: none;
+    padding: 15px 40px;
+    text-align: center;
+    margin:10px auto;
+    border-radius: 24px;
+    background: none;
+    transition: 0.25s;
+    color: #000000;
+    border: 3px solid #696565;
+    transition: all 1s;
+}
+
+
+
+.formulario button:hover {
+    background-color: #B53471;
+    cursor: grab;
+}
+
+.formulario h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.formulario a {
+    text-decoration: #000000;
+    color: #353b48;
+    text-align: center;
+    background: none;
+    margin-bottom:  1em;
+}
+
+.formulario a:hover {
+    text-decoration: underline;
+    color: #2f3640;
+}

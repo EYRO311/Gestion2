@@ -1,0 +1,47 @@
+<%- include ('./partials/_header.ejs') %>
+
+<div class="container p-4">
+
+    <div class="row">
+
+      <div class="col-md-4 mx-auto">
+
+        <form method="POST" target="/new-entry" class="card bg-dark text-light card-body">
+
+          <div class="mb-3">
+            <label for="title">Title</label>
+            <input name="title" type="text" class="form-control rounded-0" placeholder="Ingresa titulo" autofocus
+              required>
+          </div>
+
+          <div class="mb-3">
+            <label for="title">Area</label>
+            <input name="area" type="text" class="form-control rounded-0" placeholder="Area" autofocus required>
+          </div>
+
+          <div class="mb-3">
+            <label for="image">Imagen</label>
+            <input type="url" name="image" class="form-control" placeholder="Link de la imagen" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="description">Descripcion</label>
+            <textarea class="form-control" name="description" rows="2" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="description">link</label>
+            <input type="url" name="link" class="form-control" placeholder="Link del pdf" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="submit" value="Post Entry" class="btn btn-primary">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+<%- include ('./partials/_menu.ejs') %>   
+<%- include ('./partials/_footer.ejs') %>

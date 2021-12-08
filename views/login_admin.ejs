@@ -1,0 +1,35 @@
+<%- include ('./partials/_header.ejs') %>    
+<main>
+    <form id="formlogin" class = "formulario" action="/login" method="post">
+        <h2>Iniciar sesión</h2>
+        <div class="form-floating">   
+            <input type="text" class="form-control" id="" name="boleta" placeholder="Numero de boleta">
+        </div> 
+        <div>
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Contraseña">  
+        </div>         
+        <button type="submit">Iniciar sesión</button>
+        <button type="submit">Gestion</button>
+        <button type="submit">Administrador</button>
+        <a href="/register">No tengo una cuenta</a>
+    </form>  
+</main> 
+    <footer class="pie">
+        Gestión IPN - CapsuleSoft
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(alert) { %>
+      <script>
+        Swal.fire({
+          title: '<%= alertTitle %>',
+          text:'<%= alertMessage %>',
+          icon:'<%= alertIcon %>',
+          showConfirmButton: <%= showConfirmButton %>,
+          timer: <%= timer %>
+        }).then(()=>{
+          window.location = '/<%= ruta %>'
+        })
+      </script>
+    <% } %>
+</body>
+</html>

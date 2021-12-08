@@ -1,0 +1,12 @@
+<%- include ('./partials/_header.ejs') %>
+<form action="/register" class="formulario" method="post">
+    <h2>Registrar</h2>
+    <input id="names" name="names" class="form-control" type="text" placeholder="Nombres" >
+    <input id="appat" name="appat" class="form-control" type="text" placeholder="Apellido Paterno">
+    <input id="apmat" name="apmat" class="form-control" type="text" placeholder="Apellido Materno">
+    <input id="boleta" name="boleta" class="form-control" type="text" placeholder="Boleta">
+    <input id="pass" name="pass" class="form-control" type="password" placeholder="Contraseña">
+    <button type="submit">Registrate</button>
+    <a href="/login">Ya tengo una cuenta</a>
+</form>
+<%- include ('./partials/_footer.ejs') %>
